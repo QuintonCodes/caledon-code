@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, BarChart, Layers, Rocket } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -24,6 +25,7 @@ const staggerContainer = {
 const tiers = [
   {
     name: "Startup",
+    slug: "startup",
     target: "For Emerging Businesses",
     icon: <Rocket className="h-6 w-6 text-logo-blue" />,
     description:
@@ -39,22 +41,23 @@ const tiers = [
   },
   {
     name: "Elevate",
+    slug: "elevate",
     target: "For Growing Companies",
     icon: <Layers className="h-6 w-6 text-logo-blue" />,
     description:
-      "Ideal for businesses ready to scale with interactive features, enhanced content, and deeper user engagement.",
+      "Enhanced tools and performance features for scaling businesses ready to go beyond the basics.",
     features: [
-      "Interactive design elements",
-      "Dynamic banners & animations",
-      "Enhanced content depth",
-      "Advanced SEO strategies",
-      "Analytics integration",
-      "Social media integration",
+      "Dynamic website content",
+      "CMS setup",
+      "Enhanced SEO",
+      "Analytics & insights",
+      "Custom integrations",
     ],
     featured: true,
   },
   {
     name: "Excel",
+    slug: "excel",
     target: "For Established Enterprises",
     icon: <BarChart className="h-6 w-6 text-logo-blue" />,
     description:
@@ -113,9 +116,12 @@ export default function ServicesPage() {
               <Button
                 size="lg"
                 className="bg-logo-blue hover:bg-logo-blue/90 text-white font-semibold rounded-full px-8 h-12 shadow-lg hover:shadow-xl duration-300"
+                asChild
               >
-                Explore Our Work
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/portfolio">
+                  Explore Our Work
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -178,16 +184,20 @@ export default function ServicesPage() {
               <Button
                 size="lg"
                 className="bg-logo-blue hover:bg-logo-blue/90 text-white font-semibold rounded-full px-8 h-12 shadow-lg hover:shadow-xl duration-300"
+                asChild
               >
-                Contact Us
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/contact">
+                  Contact Us
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-border hover:bg-secondary font-semibold rounded-full px-8 h-12 bg-transparent duration-300"
+                asChild
               >
-                View Our Portfolio
+                <Link href="/portfolio">View Our Portfolio</Link>
               </Button>
             </div>
           </motion.div>

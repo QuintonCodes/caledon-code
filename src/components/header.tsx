@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Code } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "./ui/button";
@@ -28,8 +29,9 @@ export default function Header() {
             <Button
               size="sm"
               className="bg-logo-blue hover:bg-logo-blue/90 text-white rounded-full px-6"
+              asChild
             >
-              Get Started
+              <Link href="/contact">Get Started</Link>
             </Button>
           </motion.div>
         </div>
