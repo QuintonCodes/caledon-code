@@ -47,7 +47,8 @@ export default function ElevatePage() {
               variants={fadeInUp}
               className="text-lg text-muted-foreground max-w-2xl mx-auto font-inter"
             >
-              Enhanced tools and performance features for scaling businesses ready to go beyond the basics.
+              Enhanced tools and performance features for scaling businesses
+              ready to go beyond the basics.
             </motion.p>
           </motion.div>
         </div>
@@ -58,7 +59,7 @@ export default function ElevatePage() {
         <div className="container mx-auto px-4 max-w-5xl space-y-12 text-center">
           <div className="flex justify-center">
             <div className="w-16 h-16 rounded-xl bg-logo-blue/10 flex items-center justify-center">
-            <Layers className="h-6 w-6 text-logo-blue" />
+              <Layers className="h-6 w-6 text-logo-blue" />
             </div>
           </div>
 
@@ -66,7 +67,7 @@ export default function ElevatePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Whats Included
             </h2>
-            <ul className="text-left grid md:grid-cols-2 gap-6 text-muted-foreground font-inter">
+            <ul className="text-center grid md:grid-cols-2 gap-6 text-muted-foreground font-inter">
               <li>✅ Dynamic website content</li>
               <li>✅ CMS setup</li>
               <li>✅ Enhanced SEO</li>
@@ -84,7 +85,8 @@ export default function ElevatePage() {
             Ready to Elevate Your Business?
           </h2>
           <p className="text-lg text-muted-foreground font-inter">
-            Get your business online with a professional, conversion-ready website designed for growth.
+            Get your business online with a professional, conversion-ready
+            website designed for growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

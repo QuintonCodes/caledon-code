@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight, BarChart, Layers, Rocket } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 import Header from "@/components/header";
 import TierCard from "@/components/tier-card";
@@ -186,7 +186,7 @@ export default function ServicesPage() {
                 className="bg-logo-blue hover:bg-logo-blue/90 text-white font-semibold rounded-full px-8 h-12 shadow-lg hover:shadow-xl duration-300"
                 asChild
               >
-                <Link href="/contact">
+                <Link href="https://caledoncode.vercel.app">
                   Contact Us
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -197,7 +197,9 @@ export default function ServicesPage() {
                 className="border-border hover:bg-secondary font-semibold rounded-full px-8 h-12 bg-transparent duration-300"
                 asChild
               >
-                <Link href="/portfolio">View Our Portfolio</Link>
+                <Link href="https://caledoncode.vercel.app/services">
+                  View Our Services
+                </Link>
               </Button>
             </div>
           </motion.div>
